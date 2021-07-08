@@ -6,7 +6,6 @@ import cs from "classnames";
 import {required, email} from 'redux-form-validators';
 import {renderBigTextArea, renderInputField, renderSelect2Async, renderToggleInput} from "../../../../components/Redux-Forms";
 import Dropzone from "../../../../components/Dropzone";
-import {categorieOffre, sendCommandeTo, territoireOffre, typeOffre} from "../../../../staticTmp";
 
 const OffresForm = (props) => {
 
@@ -67,14 +66,6 @@ const OffresForm = (props) => {
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='font-weight-bold'>Categorie</label>
                                             <div>
-                                                <Field
-                                                    name={`categorie`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune categorie trouvée.'}
-                                                    options={categorieOffre}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez une categorie'}
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -82,28 +73,11 @@ const OffresForm = (props) => {
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='label-required font-weight-bold'>Type</label>
                                             <div>
-                                                <Field
-                                                    name={`type`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucun type trouvé.'}
-                                                    options={typeOffre}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez un type'}
-                                                />
                                             </div>
                                         </div>
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='label-required font-weight-bold'>Territoire </label>
                                             <div>
-                                                <Field
-                                                    name={`territoire `}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune territoire trouvé.'}
-                                                    options={territoireOffre}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez un territoire'}
-                                                    validate={required({message: 'Obligatoire'})}
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -369,15 +343,6 @@ const OffresForm = (props) => {
                                                     <label className='font-weight-bold ml-2 mr-5'>La vérification de l'email est bloquante</label>
                                                     <div className='form-group col-md-4 col-sm-12'>
                                                     <label className='label-required font-weight-bold'>Envoyer les commandes :</label>
-                                                        <Field
-                                                            name={`envoyerCommandes`}
-                                                            component={renderSelect2Async}
-                                                            noOptionsMessage={'Aucune endroit trouvé.'}
-                                                            options={sendCommandeTo}
-                                                            className="form-control"
-                                                            placeholder={'Sélectionnez'}
-                                                            validate={required({message: 'Obligatoire'})}
-                                                        />
                                                     </div>
                                                 </div>
                                             </div>

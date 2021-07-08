@@ -1,14 +1,13 @@
-import entreprisesNavs from "../modules/Entreprises/navs";
+import navs from "../modules/Actions/navs";
 
 export default {
     items: [
         {
             name: 'Gestion des actions',
             url: '/actions',
-            icon: 'fa fa-building',
-            sideBarNavs: entreprisesNavs,
-            home: '/entreprises/simulateur',
-            permissions: 'entreprises.manageEntreprises'
+            icon: 'fa fa-tasks',
+            sideBarNavs: navs,
+            home: '/actions/today'
         }
     ]
 };

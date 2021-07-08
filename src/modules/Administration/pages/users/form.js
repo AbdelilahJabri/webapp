@@ -5,8 +5,6 @@ import {connect} from 'react-redux';
 import cs from "classnames";
 import {required, email} from 'redux-form-validators';
 import {renderInputField, renderSelect2Async, renderToggleInput} from "../../../../components/Redux-Forms";
-import {categorieOffre, territoireOffre} from "../../../../staticTmp";
-import {societes, userFonction, userProfil} from "../../../../staticTmp2";
 
 const UsersForm = (props) => {
 
@@ -90,27 +88,11 @@ const UsersForm = (props) => {
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='font-weight-bold'>Profil</label>
                                             <div>
-                                                <Field
-                                                    name={`profil`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucun Profil trouvé.'}
-                                                    options={userProfil}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez un Profil'}
-                                                />
                                             </div>
                                         </div>
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='font-weight-bold'>Fonction</label>
                                             <div>
-                                                <Field
-                                                    name={`fonction`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune fonction trouvée.'}
-                                                    options={userFonction}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez une fonction'}
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -118,27 +100,11 @@ const UsersForm = (props) => {
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='font-weight-bold'>Société</label>
                                             <div>
-                                                <Field
-                                                    name={`societe`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune Société trouvée.'}
-                                                    options={societes}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez une Société'}
-                                                />
                                             </div>
                                         </div>
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='font-weight-bold'>Régions</label>
                                             <div>
-                                                <Field
-                                                    name={`regions`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune région trouvée.'}
-                                                    options={territoireOffre}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez une région'}
-                                                />
                                             </div>
                                         </div>
                                     </div>
@@ -158,15 +124,6 @@ const UsersForm = (props) => {
                                         <div className='form-group col-md-6 col-sm-12'>
                                             <label className='label-required font-weight-bold'>Plain Password</label>
                                             <div>
-                                                <Field
-                                                    name={`regions`}
-                                                    component={renderSelect2Async}
-                                                    noOptionsMessage={'Aucune région trouvée.'}
-                                                    options={categorieOffre}
-                                                    className="form-control"
-                                                    placeholder={'Sélectionnez une région'}
-                                                    validate={[required({message: 'Obligatoire'})]}
-                                                />
                                             </div>
                                         </div>
                                     </div>

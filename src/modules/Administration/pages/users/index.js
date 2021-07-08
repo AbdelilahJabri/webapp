@@ -1,7 +1,6 @@
 import React from 'react';
 import Datatable from "../../../../components/Datatable";
 import columns from "./columns";
-import {users} from "../../../../staticTmp2";
 
 const Users = ({history}) => {
 
@@ -25,7 +24,7 @@ const Users = ({history}) => {
     return (
         <div className="row">
             <div className="col-lg-12">
-                <Datatable data={users}
+                <Datatable data={[]}
                            title={"Gestions des utilisateurs"}
                            columns={columns}
                            actions={actions}
