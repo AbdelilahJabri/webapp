@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Datatable from "../../../../components/Datatable";
+import {connect, mapStateToProps} from "react-redux";
+import {createDeleteAction, createListAction} from "../../../../redux/actions";
+import {ACTIONS, TITRES} from "../../../../redux/actions/constants";
 
-const Jour = ({history}) => {
+const Jour = ({history, listTitres}) => {
+
+    useEffect(() => {
+        listTitres();
+    }, []);
 
     const actions = [
         {
@@ -33,4 +40,6 @@ const Jour = ({history}) => {
     );
 };
 
-export default Jour;
+export default connect(mapStateToProps, {
+    listActions: createListAction(ACTIONS),
+})(Jour);
