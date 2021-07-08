@@ -2,7 +2,8 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import MuiTable from '@material-ui/core/Table';
 import classnames from 'classnames';
-import {assignwith, cloneDeep, find, isUndefined, merge} from 'lodash';
+import assignwith from 'lodash.assignwith';
+import {cloneDeep, find, isUndefined, merge} from 'lodash';
 import PropTypes from 'prop-types';
 import React from 'react';
 import DefaultTableBody from './components/TableBody';
@@ -387,7 +388,7 @@ class MUIDataTable extends React.Component {
     responsive: 'vertical',
     rowHover: true,
     rowsPerPage: 10,
-    rowsPerPageOptions: [10, 15, 100],
+    rowsPerPageOptions: [10, 15, 20, 50, 100],
     search: true,
     selectableRows: 'multiple',
     selectableRowsHideCheckboxes: false,

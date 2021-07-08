@@ -12,6 +12,18 @@ export default [
         permission: 'administration.offres.manageOffres'
     },
     {
+        name: 'Sociétés de facturation',
+        url: '/administration/facturations',
+        icon: 'fa fa-building',
+        permission: 'administration.facturations.manageFacturations'
+    },
+    {
+        name: 'Origines de devis',
+        url: '/administration/originesDevis',
+        icon: 'fa fa-file-invoice-dollar',
+        permission: 'administration.originesDevis.manageOriginesDevis'
+    },
+    {
         name: 'Utilisateurs',
         url: '/administration/utilisateurs',
         icon: 'fa fa-users',

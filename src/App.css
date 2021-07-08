@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.cursor-header {
+  cursor: pointer;
+}
+
+.label-required:after {
+  color: var(--danger);
+  content: '*';
+  padding-left: 5px;
+}

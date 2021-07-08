@@ -1,32 +1,26 @@
 export default [
     {
-        name: 'Simulateur',
-        url: '/entreprises/audit',
-        icon: 'fa fa-sliders-h',
-        permission: 'entreprises.simulateur.manageSimulateur'
-    },
-    {
-        name: 'Devis',
-        url: '/entreprises/devis',
+        name: 'Bons de commande',
+        url: '/particuliers/bons',
         icon: 'fa fa-file-invoice-dollar',
-        permission: 'entreprises.devis.manageDevis'
+        permission: 'particuliers.bons.manageBons'
     },
     {
-        name: 'Portefeuilles',
-        url: '/entreprises/portefeuilles',
-        icon: 'fa fa-users',
-        permission:'entreprises.portefeuilles.managePortefeuilles'
-    },
-    {
-        name: 'Calendrier',
-        url: '/entreprises/calendrier',
+        name: 'Calendrier commercial',
+        url: '/particuliers/calendrier',
         icon: 'fa fa-calendar',
-        permission:'entreprises.calendrier.manageCalendrier'
+        permission: 'particuliers.calendrier.manageCalendrier'
+    },
+    {
+        name: 'Import réalisés ',
+        url: '/particuliers/import',
+        icon: 'fa fa-download',
+        permission: 'particuliers.import.manageImport'
     },
     {
         name: 'Statistiques',
-        url: '/entreprises/statistiques',
+        url: '/particuliers/statistiques',
         icon: 'fa fa-chart-bar',
-        permission:'entreprises.statistiques.manageStatistiques'
+        permission: 'particuliers.statistiques.manageStatistiques'
     },
 ];

@@ -3,7 +3,10 @@ import {NavLink} from "react-router-dom";
 
 
 const Header = ({history, navs, activeModule, onActiveModuleChange}) => {
-
+    const logout = () => {
+        console.log("ir chi haja")
+        history.push("/login");
+    };
     return (
         <div className="app-header header-shadow">
             <div className="app-header__logo">
@@ -56,8 +59,7 @@ const Header = ({history, navs, activeModule, onActiveModuleChange}) => {
                             )
                         }
                     </ul>
-                    <div className="header-btn-lg pr-0">
-
+                    <div className="header-btn-lg cursor-header pr-0">
                         <div className="widget-content p-0">
                             <div className="widget-content-wrapper">
                                 <div className="widget-content-left  ml-3 header-user-info" data-toggle="dropdown"
@@ -69,10 +71,15 @@ const Header = ({history, navs, activeModule, onActiveModuleChange}) => {
 
                                     <div tabIndex="-1" role="menu" aria-hidden="true"
                                          className="dropdown-menu dropdown-menu-right">
-                                        <button type="button" tabIndex="0" className="dropdown-item">Profile</button>
+                                        <button type="button" className="dropdown-item">Profile</button>
                                         <div tabIndex="-1" className="dropdown-divider"/>
-                                        <button type="button" tabIndex="0" className="dropdown-item">Déconnexion
-                                        </button>
+                                        <div onClick={logout}>
+                                        <span className="btn dropdown-item"
+
+                                        >
+                                            Déconnexion
+                                        </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

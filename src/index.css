@@ -10904,6 +10904,10 @@ a, button, .btn {
   margin: auto
 }
 
+.app-page-title .page-title-icon img {
+  margin: auto
+}
+
 .app-page-title .page-title-icon.rounded-circle {
   margin: 0 20px 0 0
 }
@@ -24036,4 +24040,8 @@ a.fc-more:hover {
   height: 350px;
   margin-bottom: 30px;
   background-size: 100%
+}
+
+.color-secondary {
+  color: #8F9EAA;
 }
