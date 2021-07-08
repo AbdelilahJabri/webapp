@@ -1,5 +1,5 @@
 import {GET, POST} from "./actions/actionTypes";
-import {LOGIN, USER, TITRES, OFFRES, SOCIETE_FACTURATIONS, ORIGINE_DEVIS} from "./actions/constants";
+import {LOGIN, USER, TITRES, OFFRES, SOCIETE_FACTURATIONS, ORIGINE_DEVIS, ACTIONS} from "./actions/constants";
 import {createCrudActions} from "./actions";
 
 export default [
@@ -17,6 +17,7 @@ export default [
     },
     ...createCrudActions(TITRES),
     ...createCrudActions(OFFRES),
+    ...createCrudActions(ACTIONS),
     ...createCrudActions(SOCIETE_FACTURATIONS),
     ...createCrudActions(ORIGINE_DEVIS),
 ]
