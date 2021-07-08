@@ -65,21 +65,13 @@ const Header = ({history, navs, activeModule, onActiveModuleChange}) => {
                                 <div className="widget-content-left  ml-3 header-user-info" data-toggle="dropdown"
                                      aria-haspopup="true" aria-expanded="false">
                                     <div className="widget-heading">
-                                        Abdelilah JABRI
+                                        GMAO
                                         <i className="fa fa-angle-down ml-2 opacity-8"/>
                                     </div>
 
                                     <div tabIndex="-1" role="menu" aria-hidden="true"
                                          className="dropdown-menu dropdown-menu-right">
-                                        <button type="button" className="dropdown-item">Profile</button>
-                                        <div tabIndex="-1" className="dropdown-divider"/>
-                                        <div onClick={logout}>
-                                        <span className="btn dropdown-item"
-
-                                        >
-                                            Déconnexion
-                                        </span>
-                                        </div>
+                                        <button type="button" className="dropdown-item">Retour</button>
                                     </div>
                                 </div>
                             </div>

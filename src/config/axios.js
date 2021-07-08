@@ -6,15 +6,6 @@ const instance =  axios.create({
     baseURL: process.env.REACT_APP_API_URL,
 });
 
-instance.interceptors.request.use(async request => {
-    const token = await localStorage.getItem("token");
-    if (token) {
-        request.headers.common['Authorization'] = "Bearer " + token;
-    }
-
-    return request;
-});
-
 instance.interceptors.response.use(response => response, error => {
     const status = get(error, 'response.status', undefined);
     const message = get(error, 'response.data.message', "");
